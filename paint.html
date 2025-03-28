@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rahimhamid.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Signika:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+<div class="master">
+<div class="logotext">
+
+
+
+<div class="header">
+
+    <a href="index.html"><img class="logo" src="logo.png"></a>
+    <div class="both">
+    
+    
+    <h1 class="title"><p style="font-size: 50px; margin-top: -50px;"><br><u>Rahim Hamid</u></br></p> <p style="margin-bottom:-23px;">A Collection of <s>Politically</s> Relevant <s>Happy</s> Little Accidents</p></h1> 
+    
+    </div>
+    <h3 class="subtitle" style="margin-right: 50px;">paintpaintpaintpaintpaintpaintpaintpaintpaintpaintpaintpaintpaintpaintpaintpaint</h3>
+    
+    
+    
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="paint.html" style="text-decoration: underline;
+    color: #780000;">Paintings</a>
+        <a href="other.html">Other</a>
+        <a href="sculpt.html">Sculptures</a>
+        <a href="info.html">Info</a>
+      </div>
+      
+      <div class="test">
+
+        <div class="column">
+
+            <div class="wrapper">
+                <img class="display" src="./portfolio/decay.jpg" alt="Four figures in blue coats against an orange background with patches of unfinished wash showing through">
+                <p class="imgtext">In Signs of Decay</p>
+                </div>
+
+                <div class="wrapper">
+                    <img class="display" src="./portfolio/safe.jpg" alt="portrait of a military leader set against a background of his military stripes">
+                    <p class="imgtext">Giving Him Another One To Be Safe</p>
+                    </div>
+
+                    <div class="wrapper">
+                        <img class="display" src="./painting/path.jpg" alt="portrait of a young person with a beard with smooth skin in place of a left eye">
+                        <p class="imgtext">Shrinkingly Finite Paths</p>
+                        </div>
+        
+                        <div class="wrapper">
+                            <img class="display" src="./portfolio/homes.jpg" alt="Multiple paintings of the flag of Pakistan done in different colors with different abstract marks over the flag">
+                            <p class="imgtext">I Look For New Homes</p>
+                            </div>
+
+                            <div class="wrapper">
+                            <img class="display" src="./portfolio/throat.png" alt="Three paintings depicting a sheep being slaughtered through the symbolic presence of hands around the primary figure">
+                            <p class="imgtext" style="transform: translate(-50%, 180%)">I Slit Her Throat When I Was 11</p>
+                            </div>
+
+        </div>
+
+        <div class="column">
+
+        <div class="wrapper">
+        <img class="display" src="./painting/ajnabi.jpg">
+        <p class="imgtext">Ajnabi</p>
+        </div>
+        
+        <div class="wrapper">
+        <img class="display" src="./painting/corpses.JPG">
+        <p class="imgtext" style="transform: translate(-50%, 250%)">The Saints Stand in Judgement</p>
+        </div>
+
+        <div class="wrapper">
+        <img class="display" src="./painting/nation.JPG">
+        <p class="imgtext" style="transform: translate(-50%, 250%)">The Coolest Costume Is The One We Always Wear</p>
+        </div>
+
+        <div class="wrapper">
+        <img class="display" src="./painting/disco.JPG">
+        <p class="imgtext" style="transform: translate(-50%, 450%)">Too Long At The Disco</p>
+        </div>
+
+        <div class="wrapper">
+        <img class="display" src="./painting/unfinished.JPG">
+        <p class="imgtext" style="transform: translate(-50%, 650%)">Towards A Nation Unfinished</p>
+        </div>
+
+        </div>
+        
+        </div>
+        <div class="popup">
+            <span>&times;</span>
+            <img src="./portfolio/decay.jpg">
+        </div>
+      
+    </div>
+
+
+    
+</div>
+
+
+    
+
+</div>
+
+
+<script>
+    document.querySelectorAll('.test img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.popup img').src = image.getAttribute('src');
+        }
+        
+    });
+
+    document.querySelector('.popup span').onclick = () => {
+        document.querySelector('.popup').style.display = 'none';
+    }
+</script>
+
+
+
+
+</body>
+</html>

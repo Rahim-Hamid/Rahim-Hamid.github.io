@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rahimhamid.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Signika:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+<div class="master">
+<div class="logotext">
+
+
+
+<div class="header">
+
+    <a href="index.html"><img class="logo" src="logo.png"></a>
+    <div class="both">
+    
+    
+    <h1 class="title"><p style="font-size: 50px; margin-top: -50px;"><br><u>Rahim Hamid</u></br></p> <p style="margin-bottom:-23px;">A Collection of <s>Politically</s> Relevant <s>Happy</s> Little Accidents</p></h1> 
+    
+    </div>
+    
+    <h3 class="subtitle">sculptsculptsculptsculptsculptsculptsculptsculptsculptsculptsculptsculptsculptsculpt</h3>
+    
+    
+    
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="paint.html">Paintings</a>
+        <a href="other.html">Other</a>
+        <a href="sculpt.html" style="text-decoration: underline;
+    color: #780000;">Sculptures</a>
+        <a href="info.html">Info</a>
+      </div>
+      
+      <div class="test">
+
+        <div class="column">
+        
+            <div class="wrapper">
+                <img class="display" src="./portfolio/chair.jpg">
+                <p class="imgtext">I Can't Get Off The Chair</p>
+                </div>
+        
+        <div class="wrapper">
+        <img class="display" src="./sculpture/soldier.JPG">
+        <p class="imgtext">As Soldiers Just Die</p>
+        </div>
+
+        <div class="wrapper">
+        <img class="display" src="./sculpture/missing.JPG">
+        <p class="imgtext">Missing</p>
+        </div>
+        
+        <div class="wrapper">
+        <img class="display" src="./sculpture/nakashima.jpg">
+        <p class="imgtext" style="transform: translate(-50%, 250%)">Failing Nakashima//Self-Portrait</p>
+        </div>
+
+
+        </div>
+
+        <div class="column">
+        
+        <div class="wrapper">
+        <img class="display" src="./sculpture/partition.JPG">
+        <p class="imgtext" style="transform: translate(-50%, 300%)">Partition</p>
+        </div>
+        
+        <div class="wrapper">
+        <img class="display" src="./sculpture/absentia.JPG">
+        <p class="imgtext" style="transform: translate(-50%, 300%)">In Absentia Triptych</p>
+        </div>
+
+        <div class="wrapper">
+        <img class="display" src="./sculpture/ends.JPG">
+        <p class="imgtext" style="transform: translate(-50%, 300%)">To Go On</p>
+        </div>
+
+        <div class="wrapper">
+        <img class="display" src="./sculpture/hope1.jpg">
+        <p class="imgtext" style="transform: translate(-50%, 300%)">Hope Arches</p>
+        </div>
+
+        <div class="wrapper">
+            <img class="display" src="./sculpture/rest.JPG">
+            <p class="imgtext" style="transform: translate(-50%, 300%)">Like All The Rest</p>
+            </div>
+
+        </div>
+        </div>
+      
+        <div class="popup">
+            <span>&times;</span>
+            <img src="./portfolio/decay.jpg">
+        </div>
+    </div>
+
+
+    
+</div>
+
+
+    
+
+</div>
+
+
+<script>
+    document.querySelectorAll('.test img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.popup img').src = image.getAttribute('src');
+        }
+        
+    });
+
+    document.querySelector('.popup span').onclick = () => {
+        document.querySelector('.popup').style.display = 'none';
+    }
+</script>
+
+
+
+
+</body>
+</html>
