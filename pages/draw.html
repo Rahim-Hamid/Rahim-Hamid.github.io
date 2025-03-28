@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rahimhamid.com</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Signika:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+<div class="master">
+<div class="logotext">
+
+
+
+<div class="header">
+
+    <a href="index.html"><img class="logo" src="../logo.png"></a>
+    <div class="both">
+    
+    
+    <h1 class="title"><p style="font-size: 50px; margin-top: -50px;"><br><u>Rahim Hamid</u></br></p> <p style="margin-bottom:-23px;">A Collection of <s>Politically</s> Relevant <s>Happy</s> Little Accidents</p></h1> 
+    
+    </div>
+    
+    <h3 class="subtitle">drawdrawdrawdrawdrawdrawdrawdrawdrawdrawdrawdrawdrawdrawdrawdrawdrawdrawdraw</h3>
+    
+    
+    
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../paint.html">Paintings</a>
+        <a href="../other.html" style="text-decoration: underline;
+    color: #780000;">Other</a>
+        <a href="../sculpt.html">Sculptures</a>
+        <a href="../info.html">Info</a>
+      </div>
+      
+      <div class="test">
+
+        <div class="column">
+        
+        <div class="wrapper">
+        <img class="display" src="../portfolio/duaa.JPG">
+        <p class="imgtext" style="transform: translate(-50%, 450%);">Mera Dimaagh Jhoomta Hai Du'aa Kartay Huay</p>
+        </div>
+
+        <div class="wrapper">
+        <img class="display" src="./draw/11.jpg">
+        <p class="imgtext" style="transform: translate(-50%, 450%);">Self-Perception Panopticon</p>
+        </div>
+
+        <div class="wrapper">
+        <img class="display" src="./draw/17.JPG">
+        <p class="imgtext" style="transform: translate(-50%, 1000%);">Cioran's Sleep</p>
+        </div>
+
+
+        <div class="wrapper">
+        <img class="display" src="./draw/Intimacy_2.jpg">
+        <p class="imgtext" style="transform: translate(-50%, 450%);">Intimacy II</p>
+        </div>
+        
+        <div class="wrapper">
+        <img class="display" src="./draw/Intimacy_3.jpg">
+        <p class="imgtext" style="transform: translate(-50%, 450%);">Intimacy III</p>
+        </div>
+
+        </div>
+
+
+        <div class="column">
+
+        <div class="wrapper">
+        <img class="display" src="./draw/Intimacy_1.jpg">
+        <p class="imgtext" style="transform: translate(-50%, 450%);">Intimacy I</p>
+        </div>
+
+
+        
+        <div class="wrapper">
+        <img class="display" src="./draw/wilson.jpg">
+        <p class="imgtext" style="transform: translate(-50%, 450%);">Wilson's Repetitions</p>
+        </div>
+        
+        <div class="wrapper">
+        <img class="display" src="./draw/Too_Long_At_Disco.jpg">
+        <p class="imgtext" style="transform: translate(-50%, 450%);">Too Long At The Disco</p>
+        </div>
+        
+        <div class="wrapper">
+        <img class="display" src="./draw/Chamber_Of_Reflection.jpg">
+        <p class="imgtext" style="transform: translate(-50%, 950%);">Chamber of Reflection</p>
+        </div>
+
+        
+
+        </div>
+
+
+        </div>
+
+        <div class="popup">
+            <span>&times;</span>
+            <img src="./portfolio/decay.jpg">
+        </div>
+      
+      
+    </div>
+
+
+    
+</div>
+
+
+    
+
+</div>
+
+
+<script>
+    document.querySelectorAll('.test img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.popup img').src = image.getAttribute('src');
+        }
+        
+    });
+
+    document.querySelector('.popup span').onclick = () => {
+        document.querySelector('.popup').style.display = 'none';
+    }
+</script>
+
+
+
+
+</body>
+</html>
